@@ -2,109 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name – Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Designer | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #ffffff, #f1f4f9);
+    }
+    .profile-img {
+      border-radius: 20px;
+      box-shadow: 8px 8px 0 #0056d2;
+    }
+    .badge-box {
+      position: absolute;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+    .social-icons a:hover {
+      color: #0d6efd;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <section class="hero">
     <div class="container">
-      <a class="navbar-brand" href="#">Your Name</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+      <div class="row align-items-center">
+        <!-- Left content -->
+        <div class="col-lg-6 mb-5">
+          <h1 class="display-5 fw-bold">Creative <span class="text-primary">Designer</span></h1>
+          <p class="lead">I create digital experiences that inspire and engage. With a passion for clean design and innovative solutions, I transform ideas into beautiful, functional realities.</p>
+          <div class="d-flex gap-4 mt-4">
+            <div>
+              <h4 class="text-primary">80</h4>
+              <p class="mb-0">Projects Completed</p>
+            </div>
+            <div>
+              <h4 class="text-primary">3</h4>
+              <p class="mb-0">Years Experience</p>
+            </div>
+            <div>
+              <h4 class="text-primary">52</h4>
+              <p class="mb-0">Happy Clients</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="#" class="btn btn-primary me-2">View My Work</a>
+            <a href="#" class="btn btn-outline-dark">Get In Touch</a>
+          </div>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Right image -->
+        <div class="col-lg-6 position-relative">
+          <img src="https://images.unsplash.com/photo-1603415526960-f8f0a3fdbd49" alt="Profile" class="img-fluid profile-img">
+          <div class="badge-box" style="top: 20px; left: 20px;">UI/UX Design</div>
+          <div class="badge-box" style="bottom: 20px; left: 30px;">Creative Ideas</div>
+          <div class="badge-box" style="bottom: 20px; right: 30px;">Development</div>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero text-center text-white d-flex align-items-center">
-    <div class="container">
-      <h1 class="display-4">Your Name</h1>
-      <p class="lead">Developer & Creative Professional</p>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am a passionate developer with experience in building responsive web applications using Bootstrap & modern tools.</p>
-    </div>
   </section>
 
-  <!-- Portfolio Gallery -->
-  <section id="portfolio" class="py-5 bg-light">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="row g-3">
-        <div class="col-md-4"><div class="card"><img src="https://via.placeholder.com/350" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Project 1</h5></div></div></div>
-        <div class="col-md-4"><div class="card"><img src="https://via.placeholder.com/350" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Project 2</h5></div></div></div>
-        <div class="col-md-4"><div class="card"><img src="https://via.placeholder.com/350" class="card-img-top" alt=""><div class="card-body"><h5 class="card-title">Project 3</h5></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    © 2025 Your Name
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<section id="portfolio" class="portfolio">
-  <div class="container">
-    <div class="section-title">
-      <h2>My Projects</h2>
-    </div>
-
-    <div class="row portfolio-container">
-
-      <!-- Project 1 -->
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="assets/img/project1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Project 1</h4>
-            <p>Website Design</p>
-            <div class="portfolio-links">
-              <a href="project1-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="col-lg-4 col-md-6 portfolio-item">
-        <div class="portfolio-wrap">
-          <img src="assets/img/project2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Project 2</h4>
-            <p>App Development</p>
-            <div class="portfolio-links">
-              <a href="project2-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
